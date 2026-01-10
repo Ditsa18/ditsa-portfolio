@@ -7,7 +7,7 @@
 
   <link rel="icon" href="images/favicon.png" />
   <link rel="stylesheet" href="style.css" />
-
+  <script defer src="script.js"></script>
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Pacifico&display=swap" rel="stylesheet">
 
@@ -20,16 +20,24 @@
 
 <body>
 
-  <!-- NAVBAR -->
   <header class="navbar">
-    <a href="index.html" class="logo">Ditsa</a>
-    <nav>
-      <a href="about.html">About</a>
-      <a href="skills.html">Skills</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <a href="index.html" class="logo">Ditsa</a>
+
+  <!-- Hamburger -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Nav links -->
+  <nav id="nav-menu">
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
   <!-- CONTACT SECTION -->
   <section class="contact-section">
