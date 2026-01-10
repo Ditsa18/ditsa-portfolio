@@ -917,16 +917,10 @@ body {
     transition: background 0.3s ease, color 0.3s ease;
   }
 
-  /* Soft purple hover */
-  .navbar nav a:hover {
-    background: rgba(155, 135, 245, 0.25);
-    color: #5714ef;
-  }
-}
-
 /* Mobile-friendly nav interactions */
 #nav-menu a:active,
 #nav-menu a:focus-visible {
   background: rgba(155, 135, 245, 0.35);
   color: #5714ef;
 }
+
