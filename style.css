@@ -806,31 +806,38 @@ body {
   }
 }
 
-/* ================= HERO SMALL MOBILE FIX ================= */
+/* ================= MOBILE HERO FIX ================= */
 @media (max-width: 480px) {
-
   .hero {
-    padding-top: 100px; /* reduce navbar + hero clash */
+    padding-top: 100px;
   }
 
   .hero-container {
     height: auto;
-    gap: 18px;
+    padding: 20px 0;
+  }
+
+  /* STOP absolute positioning on small phones */
+  .pill {
+    position: static;
+    width: fit-content;
+    margin: 10px auto;
+    font-size: 13px;
+  }
+
+  .heading {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .photo-wrapper {
+    position: static;
+    transform: none;
+    margin: 20px auto;
   }
 
   .photo-wrapper img {
     width: 200px;
-    height: 230px; /* was 280px — THIS caused overlap */
-    border-radius: 22px;
-  }
-
-  .heading {
-    font-size: 30px;
-    padding: 8px 16px;
-  }
-
-  .pill {
-    font-size: 13px;
-    padding: 10px 16px;
+    height: 240px;
   }
 }
