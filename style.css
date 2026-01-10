@@ -808,36 +808,22 @@ body {
 
 /* ================= MOBILE HERO FIX ================= */
 @media (max-width: 480px) {
-  .hero {
-    padding-top: 100px;
+  .photo-wrapper {
+    position: static !important;
+    transform: none !important;
+    margin: 20px auto !important;
   }
 
-  .hero-container {
-    height: auto;
-    padding: 20px 0;
-  }
-
-  /* STOP absolute positioning on small phones */
   .pill {
-    position: static;
-    width: fit-content;
-    margin: 10px auto;
-    font-size: 13px;
-  }
-
-  .heading {
-    font-size: 32px;
+    position: static !important;
+    margin: 10px auto !important;
     text-align: center;
   }
 
-  .photo-wrapper {
-    position: static;
-    transform: none;
-    margin: 20px auto;
-  }
-
-  .photo-wrapper img {
-    width: 200px;
-    height: 240px;
+  .hero-container {
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
