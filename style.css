@@ -820,7 +820,6 @@ body {
   }
 }
 
-
 @media (max-width: 900px) and (min-width: 481px) {
   .hero {
     padding-top: 130px;
@@ -853,4 +852,81 @@ body {
     font-size: 40px;
     transform: none;
   }
+}
+/* ================= HAMBURGER MENU ================= */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+  z-index: 1100;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #5714ef; /* same as logo */
+  border-radius: 4px;
+  transition: 0.35s ease;
+}
+
+/* Animate hamburger → X */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* ================= MOBILE NAV ================= */
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar nav {
+    position: absolute;
+    top: 100%;
+    right: 8%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(16px);
+    border-radius: 18px;
+    padding: 18px 22px;
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: var(--shadow-soft);
+  }
+
+  .navbar nav.active {
+    display: flex;
+  }
+
+  .navbar nav a {
+    margin: 0;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  /* Soft purple hover */
+  .navbar nav a:hover {
+    background: rgba(155, 135, 245, 0.25);
+    color: #5714ef;
+  }
+}
+
+/* Mobile-friendly nav interactions */
+#nav-menu a:active,
+#nav-menu a:focus-visible {
+  background: rgba(155, 135, 245, 0.35);
+  color: #5714ef;
 }
