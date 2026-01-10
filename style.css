@@ -805,3 +805,32 @@ body {
     font-size: 38px;
   }
 }
+
+/* ================= HERO SMALL MOBILE FIX ================= */
+@media (max-width: 480px) {
+
+  .hero {
+    padding-top: 100px; /* reduce navbar + hero clash */
+  }
+
+  .hero-container {
+    height: auto;
+    gap: 18px;
+  }
+
+  .photo-wrapper img {
+    width: 200px;
+    height: 230px; /* was 280px — THIS caused overlap */
+    border-radius: 22px;
+  }
+
+  .heading {
+    font-size: 30px;
+    padding: 8px 16px;
+  }
+
+  .pill {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+}
